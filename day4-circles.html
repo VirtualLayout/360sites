@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>day4-circles</title>
+    <meta name="description" content="">
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity position="0 0 20">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-entity position="-3 15 0" size="3" text="text:Circles"></a-entity>
+
+      <!--&&&&&&&&&&&&&&&&&&&&&&&&&First Row&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+      <a-circle position="-10 10 0" radius=".5"></a-circle>
+      <a-entity position="-10.8 10.8 0" text="text:.5 radius"></a-entity>
+      <a-circle position="-10 10 0" radius=".5"></a-circle>
+      <a-entity position="-10.8 10.8 0" text="text:.5 radius"></a-entity>
+
+      <a-circle position="-6 10 0"></a-circle>
+      <a-entity position="-7 8.5 0" text="text:default"></a-entity>
+      <a-circle position="-3 10 0" material="side:double"></a-circle>
+      <a-entity position="-5 11.1 0" text="text:double sided"></a-entity>
+
+      <a-circle position="2 10 0" radius="2"></a-circle>
+      <a-entity position=".7 12.3 0" text="text:2 radius"></a-entity>
+      <a-circle position="7.8 10 0" radius="3"></a-circle>
+      <a-entity position="6.5 13.5 0" text="text:3 radius"></a-entity>
+
+
+      <!-- &&&&&&&&&&&&&&&&&&&&&&&&&Second Row &&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+      <a-circle position="-8 4 0" segments="3"></a-circle>
+      <a-entity position="-10 5.5 0" text="text:3 segments or less"></a-entity>
+      <a-circle position="-3 4 0" segments="4"></a-circle>
+      <a-entity position="-5 2.5 0" text="text:4 segments"></a-entity>
+      <a-circle position="2 4 0" segments="5"></a-circle>
+      <a-entity position=".7 5.5 0" text="text:5 segments"></a-entity>
+      <a-circle position="7.8 4 0" segments="6"></a-circle>
+      <a-entity position="6.5 2.5 0" text="text:6 segments"></a-entity>
+
+      <!-- &&&&&&&&&&&&&&&&&&&&&&&&&Third Row &&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+      <a-circle position="-8 -1 0" segments="7"></a-circle>
+      <a-entity position="-10 .2 0" text="text:7 segments"></a-entity>
+      <a-circle position="-3 -1 0" segments="8"></a-circle>
+      <a-entity position="-5 -2.5 0" text="text:8 segments"></a-entity>
+      <a-circle position="2 -1 0" segments="9"></a-circle>
+      <a-entity position=".7 .2 0" text="text:9 segments"></a-entity>
+      <a-circle position="7.8 -1 0" segments="10"></a-circle>
+      <a-entity position="6.5 -2.5 0" text="text:10 segments"></a-entity>
+
+      <!-- &&&&&&&&&&&&&&&&&&&&&&&&&Fourth Row &&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+      <a-circle position="-8 -7 0" segments="15"></a-circle>
+      <a-entity position="-10 -5.8 0" text="text:15 segments"></a-entity>
+      <a-circle position="-3 -7 0" segments="20"></a-circle>
+      <a-entity position="-5 -8.5 0" text="text:20 segments"></a-entity>
+      <a-circle position="2 -7 0" segments="25"></a-circle>
+      <a-entity position=".7 -5.8 0" text="text:25 segments"></a-entity>
+      <a-circle position="7.8 -7 0" segments="30"></a-circle>
+      <a-entity position="6.1 -8.5 0" text="text:30 segments"></a-entity>
+
+      <a-sky color="#333"></a-sky>
+    </a-scene>
+  </body>
+</html>
