@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>day5-cones</title>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity position="0 4 15" rotation="-15 0 0">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-entity position="-1 10 0" text="text:Cones"></a-entity>
+      <a-entity geometry="primitive:cone"></a-entity>
+      <a-entity position="-3.5 1 0" text="text:Cones are just cylinders"></a-entity>
+
+      <a-entity position="-15 2 0" text="text:Adjusted radiusTop"></a-entity>
+      <a-entity position="-6 0 0" geometry="primitive:cone; radiusBottom:1; radiusTop:.8"></a-entity>
+      <a-entity position="-12 0 0" geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.4"></a-entity>
+      <a-entity position="-18 0 0" geometry="primitive: cone; radiusBottom: 1; radiusTop: 0"></a-entity>
+
+      <a-entity position="8 2 0" text="text:Adjusted radiusBottom"></a-entity>
+      <a-entity position="6 0 0" geometry="primitive: cone; radiusBottom: .8; radiusTop: 1"></a-entity>
+      <a-entity position="12 0 0" geometry="primitive: cone; radiusBottom: .4; radiusTop: 1"></a-entity>
+      <a-entity position="18 0 0" geometry="primitive: cone; radiusBottom: 0; radiusTop: 1"></a-entity>
+
+      <a-entity position="-1.2 3.5 0" text="text:5 height"></a-entity>
+      <a-entity position="0 7 0" geometry="primitive: cone; radiusBottom: 1; radiusTop:0; height:5"></a-entity>
+
+      <a-entity position="-1.8 -14.8 0" text="text:openEnded"></a-entity>
+      <a-entity position="0 -12 0" geometry="primitive: cone; radiusBottom: 1; radiusTop:.5; openEnded:true"></a-entity>
+      <a-entity position="0 -4 0" geometry="primitive: cone; radiusBottom: 1; radiusTop:0; height:1"></a-entity>
+      <a-entity position="0 -8 0" geometry="primitive: cone; radiusBottom: .5; radiusTop:0; height:1"></a-entity>
+      
+      <a-sky color="#333"></a-sky>
+    </a-scene>
+  </body>
+</html>
