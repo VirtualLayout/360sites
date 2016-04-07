@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>day6-cylinders</title>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-entity position="0 10 15" rotation="-15 0 0">
+      <a-camera></a-camera>
+    </a-entity>
+    <a-cylinder position="0 13 0"></a-cylinder>
+    <a-entity position="-3 15 0" text="text:Cylinders and Tubes"></a-entity>
+    <a-entity position="-1 11.8 0" text="text:default"></a-entity>
+    <a-entity position="-7.1 12.8 0" text="text:cylinders"></a-entity>
+    <a-entity position="5.1 12.8 0" text="text:tubes"></a-entity>
+    <a-entity position="-1.7 4 0" text="text:90 rotation"></a-entity>
+    <a-entity position="-7.1 2.2 0" text="text:4x4"></a-entity>
+    <a-entity position="3.1 2.2 0" text="text:4x4 doubleSided"></a-entity>
+
+    <a-entity position="-4 -4 0" geometry="primitive: cylinder; height: 1; radius: 2"></a-entity>
+    <a-entity position="-10 -4 0" geometry="primitive: cylinder; height: 3; radius: 1"></a-entity>
+    <a-entity position="-4.5 -8 0" text="text:1X2"></a-entity>
+    <a-entity position="-10.5 -8 0" text="text:3X1"></a-entity>
+
+    <a-entity position="4 -4 0" geometry="primitive: cylinder; openEnded:true; height: 1; radius: 2" material="side:double"></a-entity>
+    <a-entity position="10 -4 0" geometry="primitive: cylinder; openEnded:true; height: 3; radius: 1"></a-entity>
+    <a-entity position="2 -8 0" text="text:doubleSided"></a-entity>
+    <a-entity position="8 -8 0" text="text:not doubleSided"></a-entity>
+
+    <a-entity position="-5 8 0" geometry="primitive: cylinder; height: 4; radius: 4" rotation="90 0 0"></a-entity>
+    <a-entity position="5 8 0" geometry="primitive: cylinder; openEnded:true; height: 4; radius: 4" rotation="90 0 0" material="side:double"></a-entity>
+
+    <a-sky color="#333"></a-sky>
+</a-scene>
+  </body>
+</html>
