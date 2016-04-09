@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>day9-rings</title>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-entity position="0 4 15" rotation="-15 0 0">
+      <a-camera></a-camera>
+    </a-entity>
+    <a-entity geometry="primitive:ring"></a-entity>
+
+
+    <a-entity position="-4 0 0" geometry="primitive:ring; radiusInner:.75; radiusOuter:1"></a-entity>
+    <a-entity position="-8 0 0" geometry="primitive:ring; radiusInner:.90; radiusOuter:1"></a-entity>
+    <a-entity position="-12.5 0 0" geometry="primitive:ring; radiusInner:.99; radiusOuter:1"></a-entity>
+
+
+
+    <a-entity position="4 0 0" geometry="primitive:ring; radiusInner:.25; radiusOuter:1"></a-entity>
+    <a-entity position="8 0 0" geometry="primitive:ring; radiusInner:.10; radiusOuter:1"></a-entity>
+    <a-entity position="12.5 0 0" geometry="primitive:ring; radiusInner:.01; radiusOuter:1"></a-entity>
+
+
+
+
+
+    <a-sky color="#333"></a-sky>
+</a-scene>
+  </body>
+</html>
