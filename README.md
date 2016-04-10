@@ -13,3 +13,9 @@
 ###day5-cones
 
 ###day6-cylinders
+
+###day7-prisms
+
+###day8-planes
+
+###day9-rings
