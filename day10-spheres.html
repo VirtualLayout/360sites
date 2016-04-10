@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>day10-spheres</title>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-entity position="0 0 14" rotation="0 0 0">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <a-entity position="-1.2 10 0" text="text:Spheres"></a-entity>
+    <a-entity position="-4 9 0" text="text:"></a-entity>
+
+    <a-entity position="0 7.4 0" geometry="primitive:sphere"></a-entity>
+    <a-entity position="-1.2 5.6 0" text="text:Defualt"></a-entity>
+
+    <a-entity position="0 2.4 0" geometry="primitive:sphere; radius:2"></a-entity>
+    <a-entity position="-1.1 2 2" text="text:radius:2"></a-entity>
+
+    <a-entity position="-8 -2 0" geometry="primitive:sphere; radius:1; thetaStart:0; thetaLength:45" material="side:double"></a-entity>
+    <a-entity position="-10 -3.8 0" text="text:tS:0 tL:45"></a-entity>
+
+    <a-entity position="-3 -2 0" geometry="primitive:sphere; radius:1; thetaStart:45; thetaLength:45" material="side:double"></a-entity>
+    <a-entity position="-5.5 -3.8 0" text="text:tS:45 tL:45"></a-entity>
+
+    <a-entity position="2 -2 0" geometry="primitive:sphere; radius:1; thetaStart:90; thetaLength:45" material="side:double"></a-entity>
+    <a-entity position="-.5 -3.8 0" text="text:tS:90 tL:45"></a-entity>
+
+    <a-entity position="7 -2 0" geometry="primitive:sphere; radius:1; thetaStart:135; thetaLength:45" material="side:double"></a-entity>
+    <a-entity position="5.5 -3.8 0" text="text:tS:135 tL:45"></a-entity>
+
+
+
+    <a-entity position="0 -8 0" geometry="primitive:sphere; thetaLength:45"></a-entity>
+
+    <a-entity position="0 -8 0" geometry="primitive:sphere; thetaStart:45; thetaLength:45"></a-entity>
+
+    <a-entity position="0 -8 0" geometry="primitive:sphere; thetaStart:90; thetaLength:45"></a-entity>
+
+    <a-entity position="0 -8 0" geometry="primitive:sphere; thetaStart:135; thetaLength:45"></a-entity>
+
+    <a-entity position="-4.5 -5.5 0" text="text:"></a-entity>
+
+
+
+
+
+
+
+    <a-sky color="#333"></a-sky>
+</a-scene>
+  </body>
+</html>
