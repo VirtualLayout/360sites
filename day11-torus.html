@@ -8,7 +8,7 @@
   </head>
   <body>
     <a-scene>
-    <a-entity position="0 0 14" rotation="0 0 0">
+    <a-entity position="0 0 15" rotation="0 0 0">
       <a-camera></a-camera>
     </a-entity>
 
@@ -21,6 +21,8 @@
     <a-entity position="0 2.4 0" geometry="primitive:torus; radius:2"></a-entity>
     <a-entity position="-1.15 2 2" text="text:radius:2"></a-entity>
 
+
+
     <a-entity position="-8 -2 0" geometry="primitive:torus; radius:1; radiusTubular:.01;" material="side:double"></a-entity>
     <a-entity position="-9.5 -4.8 0" text="text:rT: .01"></a-entity>
 
@@ -32,19 +34,11 @@
 
     <a-entity position="7 -2 0" geometry="primitive:torus; radius:1; radiusTubular:.5" material="side:double"></a-entity>
     <a-entity position="5.5 -4.8 0" text="text:rt: .5 (closed)"></a-entity>
+    <a-entity position="-5 -6 0" text="text:rT is radiusTubular(the tube radius)"></a-entity>
 
 
-
-    <a-entity position="0 -8 0" geometry="primitive:torus; segmentsTubular:8"></a-entity>
-
-
-    <a-entity position="-3 -10.5 0" text="text:"></a-entity>
-
-
-
-
-
-
+    <a-entity position="0 -9.5 0" geometry="primitive:torus; segmentsTubular:8"></a-entity>
+    <a-entity position="-3 -12 0" text="text:segmentsTubular: 8"></a-entity>
 
     <a-sky color="#333"></a-sky>
 </a-scene>
