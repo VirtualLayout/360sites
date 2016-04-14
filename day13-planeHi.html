@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Day13</title>
+  <title>Day13-planeHi</title>
   <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
   <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
 </head>
@@ -11,8 +11,11 @@
     <a-entity position="0 5 20" rotation="-20 0 0">
       <a-camera active="true" far="10000" fov="80" near=".5"></a-camera>
     </a-entity>
-    <!-- <a-entity position="0 0 0" rotation="90 0 0" geometry="primitive:plane; height:20; width:20" material="side:double" color="color:#FFC555"></a-entity> -->
+
+<!-- plane surface -->
     <a-plane position="0 0 0" rotation="-90 0 0" height="25" width="25" color="#888"></a-plane>
+
+    <!-- geometry for hi -->
     <a-box position="-2.5 2 8" height="4" width="1" color="#F16785"></a-box>
     <a-box position="-1.5 2 8" height="1" width="2" color="#F16785"></a-box>
     <a-box position="-.5 2 8" height="4" width="1" color="#F16785"></a-box>
