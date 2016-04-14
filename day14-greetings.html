@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day14-greetings</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-entity position="0 10 20" rotation="-20 0 0">
+      <a-camera active="true" far="10000" fov="80" near=".5"></a-camera>
+    </a-entity>
+
+<!-- plane surface -->
+    <a-plane position="0 0 0" rotation="-90 0 0" height="25" width="25" color="#888"></a-plane>
+
+    <!-- geometry for hi -->
+    <a-box position="-2.5 2 10" height="4" width="1" color="#F16785"></a-box>
+    <a-box position="-1.5 2 10" height="1" width="2" color="#F16785"></a-box>
+    <a-box position="-.5 2 10" height="4" width="1" color="#F16785"></a-box>
+    <a-box position="2.5 1.25 10" height="2.5" width="1" color="#F16785"></a-box>
+    <a-sphere position="2.5 3.5 10" radius=".5" color="#E0E0E0"></a-sphere>
+
+  <!-- text for hola -->
+    <a-entity position="10 0 8" rotation="0 90 0" material="color:#F16785" scale="8 8 8" text="text:Hola"></a-entity>
+
+  <!-- geometry for bonjour -->
+    <a-entity position="10 1 -8" rotation="0 180 0" material="color:#F16785" scale="8 8 8" text="text:Bonjour"></a-entity>
+
+    <a-entity position="-10 1 2" rotation="0 270 0" material="color:#F16785" scale="8 8 8" text="text:Oi"></a-entity>
+
+
+
+
+    <a-sky color="#333"></a-sky>
+  </a-scene>
+</body>
+</html>
