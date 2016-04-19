@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Day</title>
+  <title>Day19-hiName</title>
   <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
   <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
@@ -21,19 +21,19 @@
 
 <!-- plane surface -->
     <a-plane position="0 0 0" rotation="-90 0 0" height="25" width="50" color="#888"></a-plane>
-
+    <a-entity id="greeting"></a-entity>
     <!-- hi -->
 
-    <a-entity id="hi" class="spheres" position="7.5 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/US_flag_48_stars.svg/220px-US_flag_48_stars.svg.png)"></a-entity>
-    <a-entity id="greeting"></a-entity>
+    <a-entity id="hi" class="spheres" position="9 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/US_flag_48_stars.svg/220px-US_flag_48_stars.svg.png)"></a-entity>
 
-    <a-entity id="hola" class="spheres" position="2.5 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png)"></a-entity>
+
+    <a-entity id="hola" class="spheres" position="3 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png)"></a-entity>
 
   <!-- bonjour -->
 
-    <a-entity id="bonjour" class="spheres" position="-7.5 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png)"></a-entity>
+    <a-entity id="bonjour" class="spheres" position="-3 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png)"></a-entity>
   <!-- Oi -->
-    <a-entity id="oi" class="spheres" position="-2.5 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/2000px-Flag_of_Portugal.svg.png)"></a-entity>
+    <a-entity id="oi" class="spheres" position="-9 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/2000px-Flag_of_Portugal.svg.png)"></a-entity>
 
     <script>
       var name= "";
