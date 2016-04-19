@@ -19,3 +19,21 @@
 ###day8-planes
 
 ###day9-rings
+
+###day10-spheres
+
+###day11-torus
+
+###day12-torusknot
+
+###day13-planeHi
+
+###day14-greetings
+
+###day15-sphereFlag
+
+###day16-moveCamera
+
+###day17-textpop
+
+###day18-foggy
