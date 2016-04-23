@@ -37,3 +37,11 @@
 ###day17-textpop
 
 ###day18-foggy
+
+###day19-hiName
+
+###day20-sphereMove
+
+###day21-images
+
+###day22-curvedimages
