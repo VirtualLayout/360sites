@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day26-videodiv</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+  <div id="break"></div>
+  <a-scene fog="type:exponential; color:#AAA;">
+
+    <!-- camera -->
+    <a-entity position="0 12.5 30" rotation="-25 0 0">
+      <a-camera id="hiCamera" class="cameras" active="true" far="10000" fov="80" near=".5">
+        <a-entity cursor="maxDistance:1000" position="0 0 -5" geometry="primitive:ring; radiusInner:.05; radiusOuter:.1"></a-entity>
+      </a-camera>
+    </a-entity>
+
+<!-- plane surface and empty divs-->
+    <a-plane position="0 0 0" rotation="-90 0 0" height="25" width="50" color="#888"></a-plane>
+    <a-entity id="greeting"></a-entity>
+    <a-entity id="images"></a-entity>
+
+    <!-- hi -->
+    <a-entity id="hi" class="spheres" position="9 10 8" rotation="0 270 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/US_flag_48_stars.svg/220px-US_flag_48_stars.svg.png)"></a-entity>
+
+    <!-- hola -->
+    <a-entity id="hola" class="spheres" position="3 10 8" rotation="0 320 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png)"></a-entity>
+
+    <!-- bonjour -->
+
+    <a-entity id="bonjour" class="spheres" position="-3 10 8" rotation="0 280 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png)"></a-entity>
+    <!-- Oi -->
+    <a-entity id="oi" class="spheres" position="-9 10 8" rotation="0 330 0" geometry="primitive:sphere; radius:2" material="src:url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/2000px-Flag_of_Portugal.svg.png)"></a-entity>
+
+    <script>
+      var name= "";
+      document.querySelector('#hola').addEventListener('click', function () {
+      name = prompt("Que es tu nombre?")
+      $("#hi").attr('position', '9 -1 18');
+      $("#hola").attr('position', '3 -1 18');
+      $("#bonjour").attr('position', '-3 -1 18');
+      $("#oi").attr('position', '-9 -1 18');
+      $("#break").html('<video width="640" height="264" autoplay><source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4"/></video>');
+      $("#greeting").html('<a-entity position="-12.5 2 13" material="color:#F16785" scale="5 5 5" text="text:Conejo  '+name+'"></a-entity>')
+    });
+
+      document.querySelector('#bonjour').addEventListener('click', function () {
+      name = prompt("Quel est votre nom?");
+      $("#hi").attr('position', '9 -1 18');
+      $("#hola").attr('position', '3 -1 18');
+      $("#bonjour").attr('position', '-3 -1 18');
+      $("#oi").attr('position', '-9 -1 18');
+      $("#break").html('<video width="640" height="264" autoplay><source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4"/></video>');
+      $("#greeting").html('<a-entity position="-15.5 2 11" material="color:#F16785" scale="5 5 5" text="text:Lapin  '+name+'"></a-entity>');
+    });
+
+      document.querySelector('#oi').addEventListener('click', function () {
+      name = prompt("Qual é o seu nome?")
+      $("#hi").attr('position', '9 -1 18');
+      $("#hola").attr('position', '3 -1 18');
+      $("#bonjour").attr('position', '-3 -1 18');
+      $("#oi").attr('position', '-9 -1 18');
+      $("#break").html('<video width="640" height="264" autoplay><source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4"/></video>');
+      $("#greeting").html('<a-entity position="-11.5 2 11" material="color:#F16785" scale="5 5 5" text="text:Coelho  '+name+'"></a-entity>');
+    });
+
+      document.querySelector('#hi').addEventListener('click', function () {
+      name = prompt("What is your name?")
+      $("#hi").attr('position', '9 -1 18');
+      $("#hola").attr('position', '3 -1 18');
+      $("#bonjour").attr('position', '-3 -1 18');
+      $("#oi").attr('position', '-9 -1 18');
+      $("#break").html('<video width="640" height="264" autoplay><source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4"/></video>');
+      $("#greeting").html('<a-entity position="-11.5 2 11" material="color:#F16785" scale="5 5 5" text="text:Bunny  '+name+'"></a-entity>');
+    });
+</script>
+    <a-sky color="#333"></a-sky>
+  </a-scene>
+</body>
+</html>
