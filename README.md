@@ -53,3 +53,9 @@
 ###day25-videoglobe
 
 ###day26-videodiv
+
+###day27-light
+
+###day28-directionalLight
+
+###day29-hemisphereLight
