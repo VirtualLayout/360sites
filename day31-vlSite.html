@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day31-VirtualLayout</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+  <a-scene fog="exponential; color:#CCC">
+       <!-- camera -->
+    <a-entity position="0 0 0">
+      <a-camera>
+        <a-entity cursor="maxDistance:10000" position="0 0 -1" geometry="primitive:ring; color:pink; radiusInner:.005; radiusOuter:.01"><a-entity>
+      </a-camera>
+    </a-entity>
+    <a-entity id="titleName" position="-10.5 0 -10"></a-entity>
+    <a-sphere id="welcome" visable="true" position="0 0 -5" color="pink" radius="2"></a-sphere>
+
+
+    <a-sky color="#333"></a-sky>
+  </a-scene>
+
+
+
+
+  <script>
+  document.querySelector('#welcome').addEventListener('click', function () {
+      $("#titleName").html('<a-entity material="color:#F16785" scale="5 5 5" text="text:Virtual Layout"></a-entity>');
+      $("#welcome").attr('position', '0 0 50');
+    });</script>
+</body>
+</html>
