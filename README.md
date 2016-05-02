@@ -59,3 +59,7 @@
 ###day28-directionalLight
 
 ###day29-hemisphereLight
+
+###day30-spotLight
+
+###day31-vlSite
