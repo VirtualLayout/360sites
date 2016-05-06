@@ -67,3 +67,7 @@
 ###day32-vlWelcome
 
 ###day33-vlSphere
+
+###day34-vlHide
+
+###day35-vlLight

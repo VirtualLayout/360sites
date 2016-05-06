@@ -34,7 +34,7 @@
       $("#welcome").attr('radius', '1.05')
       $("#welcome").attr('position', '6.58 .9 -10');
       $("#clickme").hide(1,function(){$(this).remove();});
-      $("a-scene").append('<a-entity light="color:#F5F5F5; intensity:2" position="-4 5 2"><a-animation attribute="easing-in-out" dur="1000"></a-animation></a-entity>')
+      $("a-scene").append('<a-entity id="openingLight" light="color:#F5F5F5; intensity:2" position="-4 5 2"><a-animation attribute="easing-in-out" dur="1000"></a-animation></a-entity>')
       //sky color change
       $("a-sky").attr('color', '#333');
     });
