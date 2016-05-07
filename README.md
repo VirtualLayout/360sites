@@ -71,3 +71,7 @@
 ###day34-vlHide
 
 ###day35-vlLight
+
+###day36-vlAnimateLight
+
+###day37-vlAnimateSpotLight
