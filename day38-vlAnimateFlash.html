@@ -34,7 +34,11 @@
       $("#welcome").attr('radius', '1.05')
       $("#welcome").attr('position', '6.58 .9 -10');
       $("#clickme").hide(1,function(){$(this).remove();});
+
+      // Scene light to create shadows
       $("a-scene").append('<a-entity><a-entity light="color:#F5F5F5; intensity:2" position="-1 3 2"></a-entity></a-entity>')
+
+      // flash bulbs
       $("a-scene").append('<a-entity><a-entity light="color:#F5F5F5; type:spot; intensity:1.8; angle:0" position="-50 -2 2"><a-animation attribute="position" dur="250" to="25 1 4" repeat="indefinite"></a-animation></a-entity></a-entity>');
       $("a-scene").append('<a-entity><a-entity light="color:#F5F5F5; type:spot; intensity:1.8; angle:10" position="-35 -2 2"><a-animation attribute="position" dur="500" to="25 1 4" repeat="indefinite"></a-animation></a-entity></a-entity>');
       $("a-scene").append('<a-entity><a-entity light="color:#F5F5F5; type:spot; intensity:1.8; angle:10" position="-15 -2 2"><a-animation attribute="position" dur="550" to="25 -1 4" repeat="indefinite"></a-animation></a-entity></a-entity>');

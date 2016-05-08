@@ -75,3 +75,5 @@
 ###day36-vlAnimateLight
 
 ###day37-vlAnimateSpotLight
+
+###day38-vlAnimateFlash
