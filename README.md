@@ -79,3 +79,5 @@
 ###day38-vlAnimateFlash
 
 ###day39-vlMoveText
+
+###day40-vlSlideText

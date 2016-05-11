@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day40-vlSlideText</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+  <a-scene>
+       <!-- camera -->
+    <a-entity position="0 0 0">
+      <a-camera>
+        <a-entity cursor="maxDistance:10000" position="0 0 -1" geometry="primitive:ring; color:pink; radiusInner:.005; radiusOuter:.01"><a-entity>
+      </a-camera>
+      <!--divs and baloon-->
+    </a-entity>
+
+    <a-entity id="titleName"></a-entity>
+    <a-entity id="welcomeText" position="-4 0 -10"></a-entity>
+    <a-sphere id="welcome" visable="true" position="0 0 -2" color="pink" radius="1"></a-sphere>
+    <a-entity id="clickme" material="color:white" position="-1.38 3 -5" text="text:Click Me!"></a-entity>
+
+    <a-sky color="#555"></a-sky>
+  </a-scene>
+
+  <script>
+  document.querySelector('#welcome').addEventListener('click', function () {
+      // text add
+      $("a-scene").append('<a-entity><a-entity position="20 0 -10" material="color:#F16785" scale="5 5 5" text="text:Lay  ut"><a-animation begin="500" attribute="position" from="20 0 -10" to=".15 0 -10"></a-animation></a-entity></a-entity>');
+      $("a-scene").append('<a-entity><a-entity position="-20 0 -10" material="color:#F16785" scale="5 5 5" text="text:Virtual"><a-animation begin="500" attribute="position" from="-20 0 -10" to="-10.5 0 -10"></a-animation></a-entity></a-entity>');
+      $("#welcomeText").html('<a-entity position="-10 10 -10" material="color:#F16785" scale="2 2 2" text="text:Welcome to"></a-entity>');
+      // sphere resize and move
+      $("#welcome").attr('radius', '1.05')
+      $("#welcome").attr('position', '6.58 .9 -10');
+      $("#clickme").hide(1,function(){$(this).remove();});
+
+      // light
+      $("a-scene").append('<a-entity><a-entity light="color:#F5F5F5; intensity:2" position="-1 3 2"></a-entity></a-entity>');
+      // animated spotlight
+      $("a-scene").append('<a-entity><a-entity light="color:#F5F5F5; type:spot; intensity:1.8; angle:10" position="-25 -2 2"><a-animation attribute="position" dur="5000" to="25 -1 4" repeat="indefinite"></a-animation></a-entity></a-entity>');
+      $("#welcomeText").hide(10000, function(){$(this).remove();});
+
+      //sky color change
+      $("a-sky").attr('color', '#333');
+    });
+  </script>
+</body>
+</html>
