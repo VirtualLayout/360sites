@@ -81,3 +81,7 @@
 ###day39-vlMoveText
 
 ###day40-vlSlideText
+
+###day41-vlSphereEntrance
+
+###day42-vlSphereDrop
