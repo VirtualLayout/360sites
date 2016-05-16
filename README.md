@@ -89,3 +89,5 @@
 ###day43-vlSphereDropIn
 
 ###day44-vlWelcomeSlideInOut
+
+###day45-vlWelcomeKick
