@@ -95,3 +95,5 @@
 ###day46-vlSphereHop
 
 ###day47-vlFutbolRotation
+
+###day48-vlStuckSphere
