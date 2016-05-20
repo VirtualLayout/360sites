@@ -97,3 +97,7 @@
 ###day47-vlFutbolRotation
 
 ###day48-vlStuckSphere
+
+###day49-vlWelcomeSlider
+
+###day50-vlSphereSwitch
