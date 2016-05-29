@@ -109,3 +109,11 @@
 ###day53-vlMainMenu
 
 ###day54-vlFogSwitch
+
+###day55-vlSpotLightSpeed
+
+###day56-vlCameraSwitch
+
+###day57-vlVibesSwitch
+
+###day58-vlBackgroundColor
