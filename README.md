@@ -117,3 +117,5 @@
 ###day57-vlVibesSwitch
 
 ###day58-vlBackgroundColor
+
+###day59-vlTextColor
