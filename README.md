@@ -119,3 +119,5 @@
 ###day58-vlBackgroundColor
 
 ###day59-vlTextColor
+
+###day60-vlMenuPanel
