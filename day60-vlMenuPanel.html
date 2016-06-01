@@ -26,7 +26,7 @@
     <!-- sounds -->
     <a-entity id="vibes" geometry="primitive: plane" material="color: pink" position="-10 0 0"></a-entity>
 
-    <a-entity id="mainMenu" position="-4.5 3.5 -8"><a-plane material="src:url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5l4ULXmIyLZDMgJ2-iUnWSINwaxERpLFlqwBtnEFekiYlwnyn)"></a-plane></a-entity>
+    <a-entity id="mainMenu" position="-7.25 5.85 -8"><a-plane material="src:url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5l4ULXmIyLZDMgJ2-iUnWSINwaxERpLFlqwBtnEFekiYlwnyn)"></a-plane></a-entity>
 
     <a-sky color="#333"></a-sky>
   </a-scene>
@@ -55,15 +55,15 @@
     });
 
   $('#mainMenu').on('click', function(){
-    $('a-scene').append('<a-plane id="menuBackground" height="1.5" width="12" material="color:black" position="-2 6.5 -8.2"></a-plane>')
-    $('a-scene').append('<a-entity id="lightSwitch"><a-plane material="src:url(https://d13yacurqjgara.cloudfront.net/users/63537/screenshots/1069396/toggle.gif)" position="-6 6.35 -8"></a-plane></a-entity>')
-    $('a-scene').append('<a-entity id="sphereMenu"><a-plane material="src:url(https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/switch.png)" position="-4.75 6.35 -8"></a-plane></a-entity>')
-    $('a-scene').append('<a-entity id="fogSwitch"><a-plane material="src:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaw2r7ErK7CnwqssEY1ulDL6s0gZe7raDCUaovxK4WMSkDrwubiF2M7w)" position="-3.5 6.35 -8"></a-plane></a-entity>')
-    $('a-scene').append('<a-entity id=spotLightSpeed><a-plane material="src:url(https://cdn0.iconfinder.com/data/icons/astronomy-1/500/speed-512.png)" position="-2.25 6.35 -8"></a-plane></a-entity>');
-    $('a-scene').append('<a-entity id="cameraSwitch"><a-plane material="src:url()" position="-1 6.35 -8"></a-plane></a-entity>');
-    $('a-scene').append('<a-entity id="vibesSwitch"><a-plane position=".25 6.35 -8"></a-plane></a-entity>');
-    $('a-scene').append('<a-entity id="backgroundSwitch"><a-plane material="src:url()" position="1.5 6.35 -8"></a-plane></a-entity>');
-    $('a-scene').append('<a-entity id="textSwitch"><a-plane material="src:url()" position="2.75 6.35 -8"></a-plane></a-entity>');
+    $('a-scene').append('<a-plane id="menuBackground" height="1.5" width="12.5" material="color:black" position="-2.25 6 -8.2"></a-plane>')
+    $('a-scene').append('<a-entity id="lightSwitch"><a-plane material="src:url(https://d13yacurqjgara.cloudfront.net/users/63537/screenshots/1069396/toggle.gif)" position="-6 5.85 -8"></a-plane></a-entity>')
+    $('a-scene').append('<a-entity id="sphereMenu"><a-plane material="src:url(https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/switch.png)" position="-4.75 5.85 -8"></a-plane></a-entity>')
+    $('a-scene').append('<a-entity id="fogSwitch"><a-plane material="src:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaw2r7ErK7CnwqssEY1ulDL6s0gZe7raDCUaovxK4WMSkDrwubiF2M7w)" position="-3.5 5.85 -8"></a-plane></a-entity>')
+    $('a-scene').append('<a-entity id=spotLightSpeed><a-plane material="src:url(https://cdn0.iconfinder.com/data/icons/astronomy-1/500/speed-512.png)" position="-2.25 5.85 -8"></a-plane></a-entity>');
+    $('a-scene').append('<a-entity id="cameraSwitch"><a-plane material="src:url()" position="-1 5.85 -8"></a-plane></a-entity>');
+    $('a-scene').append('<a-entity id="vibesSwitch"><a-plane position=".25 5.85 -8"></a-plane></a-entity>');
+    $('a-scene').append('<a-entity id="backgroundSwitch"><a-plane material="src:url()" position="1.5 5.85 -8"></a-plane></a-entity>');
+    $('a-scene').append('<a-entity id="textSwitch"><a-plane material="src:url()" position="2.75 5.85 -8"></a-plane></a-entity>');
 
   })
   $('#sphereMenu').on('click', function () {
